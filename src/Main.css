@@ -1,0 +1,542 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+.App {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+/* Dark Mode */
+.darkMode {
+    font-size: 20px;
+    color: silver;
+}
+#dark {
+    border: #151515;
+    background-color: #151515;
+    box-shadow: none;
+}
+#dark table {
+    background-color: #191919;
+}
+#dark form {
+    background-color: #191919;
+    color: white;
+}
+#dark form label {
+    color: white;
+}
+#dark form input::placeholder {
+    color: #191919;
+}
+#dark .lWrapper span {
+    background-color: #191919;
+}
+#dark .lWrapper div:hover {
+    background-color: silver;
+}
+#dark .second {
+    background-color: silver;
+}
+#dark .htLeft h1 {
+    color: white;
+}
+#dark .exit {
+    color: white;
+}
+
+/* Info */
+.info {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+/* Left */
+.left {
+    width: 20%;
+    border-right: 1px solid #E8E8E8;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.lWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.lWrapper div {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+.lWrapper div:hover {
+    background-color: #F0F7FF;
+    color: #197BBD;
+}
+.lWrapper div:hover span {
+    color: #197BBD;
+}
+.lWrapper div:hover button {
+    color: #197BBD;
+}
+.lWrapper button {
+    border: none;
+    outline: none;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 15px;
+    font-family: 'Lato';
+    color: #C7C7C7;
+}
+.lWrapper span {
+    padding: 0px 5px 3px 5px;
+    border-radius: 2px;
+    color: #C7C7C7;
+    background-color: white;
+}
+.second {
+    background-color: #F0F7FF;
+    color: #197BBD;
+}
+.second button {
+    color: #197BBD;
+}
+.second span {
+    padding: 0px 5px 3px 5px;
+    border-radius: 2px;
+    color: #197BBD;
+    background-color: white;
+}
+.lTop {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.lTop h3 {
+    color: #0F4264;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 16.7475px;
+    line-height: 21px;
+}
+#photo {
+    display: none;
+}
+
+/* Right */
+.right {
+    width: 100%;
+    padding: 35px 55px 35px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.info .lTop {
+    user-select: none;
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px 130px 0px 0px;
+}
+.hTop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hTop .lTop {
+    display: none;
+}
+.htLeft h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 43.3726px;
+    line-height: 53px;
+    color: #404040;
+}
+.htLeft h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 16.0564px;
+    line-height: 20px;
+    color: #AEAEAE;
+}
+.htRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    user-select: none;
+}
+.htRight p {
+    cursor: pointer;
+}
+.orange {
+    background-color: #FFC145;
+    border-radius: 50%;
+}
+.footer table {
+    width: 100%;
+    border: 1px solid #DBDDE0;
+    border-collapse: collapse;
+}
+table {
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.tdImg {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.footer table img {
+    width: 100%;
+    border-radius: 50%;
+}
+table thead {
+    background-color: #e8e8e89e;
+}
+th {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 14px;
+    color: #25282B;
+}
+td {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 14px;
+    color: #52575C;
+}
+.activ {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.activ button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+}
+.hBottom {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 250px;
+}
+.hBottom button {
+    border: none;
+    color: white;
+    padding: 5px 25px 5px 25px;
+    border-radius: 4px;
+    font-size: 22px;
+    font-family: 'Lato';
+    font-weight: 400;
+    background-color: #336CFB;
+}
+.hBottom input {
+    outline: none;
+    width: 35%;
+    border: 1px solid #E8E8E8;
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 100px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Add */
+.add {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E5E5;
+}
+.add span {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+.add form {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 30px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: white;
+}
+.add form input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    outline: none;
+}
+.add form h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    position: relative;
+}
+.add form h1::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 55px;
+    width: 5px;
+    height: 100%;
+    background-color: #336CFB;
+}
+.input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.add label {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6C6C6C;
+}
+.add input::placeholder {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #CDCDCD;
+}
+.add input:focus {
+    border: 1.5px solid #336CFB;
+}
+.formFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.formBtn {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 0px 0px;
+}
+.formBtn button {
+    width: 75%;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    border: none;
+    padding: 12px 15px;
+    font-family: 'Lato', sans-serif;
+    border-radius: 4px;
+    background-color: #336CFB;
+}
+#labelPhoto p {
+    padding: 0px 0px 0px 15px;
+}
+.media450 {
+    display: none;
+}
+.menu {
+    display: none;
+}
+.left .htRight {
+    display: none;
+}
+
+/* Media */
+
+/* 450px */
+@media (max-width: 450px) {
+
+    /* Info */
+    .right {
+        padding: 15px 20px;
+    }
+    .left {
+        transition: .2s ease-in-out;
+    }
+    #closeMenu {
+        position: absolute;
+        left: -200%;
+        border: none;
+    }
+    #openMenu {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: none;
+        padding: 10px 25px;
+        background-color: #151515;
+    }
+    #openMenu .lTop {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    #openMenu .lTop .htRight {
+        display: flex;
+        padding: 0;
+    }
+    .htRight {
+        display: none;
+    }
+    .hTop .lTop {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .menu {
+        display: block;
+        font-size: 40px;
+        cursor: pointer;
+        user-select: none;
+        outline: none;
+    }
+    .media450 {
+        width: 100%;
+        display: block;
+        padding: 0px 15px;
+    }
+    .media450 h1 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+    .hTop .htLeft {
+        display: none;
+    }
+    .header {
+        text-align: center;
+        padding: 0;
+    }
+    .orange {
+        width: 35px;
+        height: 35px;
+    }
+    .orange img {
+        width: 100%;
+    }
+    .hBottom {
+        gap: 100px;
+    }
+    .hBottom button {
+        padding: 4px 20px;
+        font-size: 18px;
+    }
+    .hBottom input {
+        width: 55%;
+        padding: 7px 13px;
+        font-size: 13px;
+    }
+
+    /* Add */
+    .add span {
+        top: 15px;
+        right: 25px;
+        font-size: 35px;
+    }
+    .add form {
+        width: 80%;
+        padding: 40px 30px;
+    }
+    .add form input {
+        font-size: 13px;
+    }
+    .add form h1 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .add form h1::before {
+        left: 35px;
+    }
+    .add label {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .add input::placeholder {
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .formBtn {
+        padding: 8px 0px 0px 0px;
+    }
+    .formBtn button {
+        font-size: 19px;
+        line-height: 15px;
+        padding: 11px 13px;
+    }
+    #labelPhoto p {
+        padding: 0px 0px 0px 17px;
+    }
+}
+
+/* 435px */
+@media (max-width: 435px) {
+    .add form h1::before {
+        left: 30px;
+    }
+}
+
+/* 420px */
+@media (max-width: 420px) {
+    .add form h1::before {
+        left: 25px;
+    }
+}
+
+/* 400px */
+@media (max-width: 400px) {
+    .hBottom {
+        gap: 90px;
+    }
+    .hBottom button {
+        font-size: 17px;
+    }
+    .add form h1::before {
+        left: 20px;
+    }
+    .add form h1 {
+        padding: 0px 0px 0px 10px;
+    }
+}
+
+/* 385px */
+@media (max-width: 385px) {
+    #openMenu {
+        padding: 5px;
+    }
+    .add form {
+        width: 85%;
+    }
+    .add form h1 {
+        padding: 0px 0px 0px 14px;
+    }
+}
